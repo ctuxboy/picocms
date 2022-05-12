@@ -19,7 +19,7 @@
       {% endif %}
     {% endfor %}
 
-#### Loop trought an YAML-array (metadata)
+#### Loop trought a YAML-array (metadata)
 
 Yaml:
 
