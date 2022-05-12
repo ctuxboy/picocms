@@ -18,3 +18,19 @@
         <p><a href="{{ page.url }}">{{ page.title }}</a></p>
       {% endif %}
     {% endfor %}
+
+#### Loop trought an YAML-array (metadata)
+
+Yaml:
+
+    links:
+      - name: website-1
+        url: https://website-1.com
+      - name: website-2
+        url: https://website-2.com
+    
+Twig:
+
+    {% for item in meta.links %}
+      <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+    {% endfor %}
