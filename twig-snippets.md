@@ -50,7 +50,7 @@ Twig:
 #### Count pages from a specific offset (dirtree)
 
     {% set counter = '' %}
-    {% for page in pages("",offset=3) %} {# offset=4 => /subdir/subdir/page.md #}
+    {% for page in pages("",offset=3) %} {# offset=3 => /subdir/subdir/page.md #}
       {% set counter = counter + 1 %}
     {% endfor %}
 
