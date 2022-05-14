@@ -56,7 +56,7 @@ Twig:
 
     Total pages: {{ counter }}
     
-#### Include footer in twig-page (or include other snippet)
+#### Include footer in twig-page (or include other twig-snippet)
 _(/inc/footer.twig)_
 
     {% include "inc/footer.twig" %}
