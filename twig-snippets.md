@@ -34,3 +34,24 @@ Twig:
     {% for item in meta.links %}
       <p><a href="{{ item.url }}">{{ item.name }}</a></p>
     {% endfor %}
+    
+    
+#### Count pages from a specific template
+
+    {% set counter = '' %}
+      {% for page in pages %}
+      {%- if page.meta["template"] == 'YOUR_TEMPLATE' %}
+        {% set counter = counter +1 %}
+      {% endif -%}
+    {% endfor %}
+    
+    Total pages: {{ counter }}
+    
+#### Count pages from a specific offset (dirtree)
+
+    {% set counter = '' %}
+    {% for page in pages("",offset=3) %} {# offset=4 => /subdir/subdir/page.md #}
+      {% set counter = counter + 1 %}
+    {% endfor %}
+
+    Total pages: {{ counter }}
