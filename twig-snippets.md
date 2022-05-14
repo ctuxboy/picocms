@@ -55,3 +55,8 @@ Twig:
     {% endfor %}
 
     Total pages: {{ counter }}
+    
+#### Include footer in twig-page (or include other snippet)
+_(/inc/footer.twig)_
+
+    {% include "inc/footer.twig" %}
