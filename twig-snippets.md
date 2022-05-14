@@ -36,7 +36,7 @@ Twig:
     {% endfor %}
     
     
-#### Count pages from a specific template
+#### Total pages from a specific template
 
     {% set counter = '' %}
       {% for page in pages %}
@@ -47,7 +47,7 @@ Twig:
     
     Total pages: {{ counter }}
     
-#### Count pages from a specific offset (dirtree)
+#### Total pages from a specific offset (dirtree)
 
     {% set counter = '' %}
     {% for page in pages("",offset=3) %} {# offset=3 => /subdir/subdir/page.md #}
