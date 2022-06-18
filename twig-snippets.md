@@ -61,7 +61,7 @@ _(/inc/footer.twig)_
 
     {% include "inc/footer.twig" %}
     
-#### If frontpage show 'WELCOME'
+#### If frontpage, show 'WELCOME'
 
     {% if current_page.id == "index" %}
       <h1>WELCOME</h1>
