@@ -1,4 +1,4 @@
-## Twig snippets
+## PicoCMS cheatsheet
 #### List childpages
 
     {% for page in pages(current_page.id) if not page.hidden %}
